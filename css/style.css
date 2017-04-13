@@ -1,0 +1,82 @@
+/*
+Typography:
+
+The base font size is 16px for all screen width 600px and up (the mobile base font size is 14px)
+The body font family is Raleway Light
+The headings font family is Playfair Display
+Colours:
+
+The HEX code for the body font colour is #2d2d2d
+The HEX code for the light grey text colour is #969696
+The HEX code for orange brand colour is #e2574c (used for links, some headings, and buttons)
+The HEX code for the link hover state colour is #b64036
+The HEX code for the light grey border colour is #d7d7d7
+The HEX code for the dark grey background colour is the footer is #242424
+Screen Sizes:
+
+The width of the desktop-friendly content area is 1240px
+If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  max-height: 4em;
+  min-height: 4em;
+}
+
+header ul{
+    list-style-type: none;
+    position: relative;
+    top: 1.5em;
+    display: inline;
+    text-transform: uppercase;
+}
+
+header li{
+  display: inline;
+}
+
+header a{
+   color: #e2574c;
+}
+
+header img {
+  min-height: 1em;
+  max-height: 4em;
+  width: auto;
+}
+
+#cart{
+  float: right;
+}
+
+#logo{
+  float:left;
+}
+
+.hero {
+  text-align: center;
+  height: 25vh;
+  padding-top: 12vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%), url("../images/banner-girl.png") no-repeat center,
+  url("../images/flower-bkgd.jpg");
+  background-size: auto, auto 37vh, cover;
+  background-position: auto, center, auto;
+}
+
+.hero p{
+   text-transform: uppercase;
+}
+
+.wrapper{
+  max-width:1240px;
+}
