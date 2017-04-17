@@ -4,14 +4,14 @@ Typography:
 The base font size is 16px for all screen width 600px and up (the mobile base font size is 14px)
 The body font family is Raleway Light
 The headings font family is Playfair Display
-Colours:
-
 The HEX code for the body font colour is #2d2d2d
 The HEX code for the light grey text colour is #969696
 The HEX code for orange brand colour is #e2574c (used for links, some headings, and buttons)
-The HEX code for the link hover state colour is #b64036
-The HEX code for the light grey border colour is #d7d7d7
 The HEX code for the dark grey background colour is the footer is #242424
+The HEX code for the link hover state colour is #b64036
+
+The HEX code for the light grey border colour is #d7d7d7
+
 Screen Sizes:
 
 The width of the desktop-friendly content area is 1240px
@@ -22,17 +22,37 @@ If undertaking the responsive stretch goal, the width of the tablet-friendly con
   padding: 0;
   margin: 0;
 }
-
+.wrapper{
+  max-width:1240px;
+}
+body {
+  font-family: "Raleway Light";
+  color: #2d2d2d;
+}
 a{
   text-decoration: none;
 }
-
-header {
+a:hover{
+  color: #b64036;
+}
+h1, h2, header{
+  font-family: "Playfair Display";
+}
+h2, header{
+  color: #2d2d2d;
+}
+em{
+  font-weight: 400;
+  font-family: "Playfair Display Italic"
+}
+strong{
+  font-family: "Playfair Display Bold"
+}
+header{
   text-align: center;
   max-height: 4em;
   min-height: 4em;
 }
-
 header ul{
     list-style-type: none;
     position: relative;
@@ -40,19 +60,25 @@ header ul{
     display: inline;
     text-transform: uppercase;
 }
-
 header li{
   display: inline;
 }
-
 header a{
    color: #e2574c;
 }
-
-header img {
+header img{
   min-height: 1em;
   max-height: 4em;
   width: auto;
+}
+h2, .main p{
+  text-align: center;
+}
+
+h2{
+  line-height: 2em;
+  padding-top: 1em;
+  font-size: 2em;
 }
 
 #cart{
@@ -63,20 +89,132 @@ header img {
   float:left;
 }
 
-.hero {
-  text-align: center;
-  height: 25vh;
-  padding-top: 12vh;
+.hero{
   background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%), url("../images/banner-girl.png") no-repeat center,
   url("../images/flower-bkgd.jpg");
   background-size: auto, auto 37vh, cover;
   background-position: auto, center, auto;
-}
+  text-align: center;
+  height: 25vh;
+  padding-top: 12vh;
 
+  color: white;
+}
 .hero p{
    text-transform: uppercase;
 }
+.main{
+    font-family: "Raleway Light"
+}
+.main p, .email p{
+  line-height: 1.6em;
+  font-size:  0.9em;
+  font-weight: 600;
+}
+.main p{
+  color: #969696;
+}
+.main ul{
+  margin-top: 3.5em;
+}
+.main li {
+  display: inline-block;
+  width: 7em;
+  height: 4em;
+  padding-top: 3em;
+  margin-bottom: 0.25em;
+  text-align: center;
 
-.wrapper{
-  max-width:1240px;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main li.double {
+  width: 14em;
+}
+
+.mens {
+  background-image: url("../images/mens-category.jpg");
+}
+.trends {
+  background-image: url("../images/trends-category.jpg");
+}
+.glasses {
+  background-image: url("../images/glasses-category.jpg");
+}
+.sale {
+  background-image: url("../images/sale-category.jpg");
+}
+.bags {
+  background-image: url("../images/bags-category.jpg");
+}
+.womens {
+  background-image: url("../images/womens-category.jpg");
+}
+
+.email {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
+  background-size: cover;
+  padding-bottom: 4em;
+  text-align: center;
+  color: white;
+}
+.email h2{
+  color: white;
+}
+
+.email:hover .email:focus{
+  transform: scale(1.2);
+}
+.txtWrap {
+  display:inline-block;
+  width: 70%;
+  border-radius: 2em;
+  background-color: white;
+
+}
+.email textarea{
+  margin-top: 0.35em;
+  border-radius: 2em;
+  border: none;
+  box-shadow: none;
+  width: 70%;
+  float: left;
+}
+button {
+  margin:0.1em 0.1em;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  width: 25%;
+  min-width: 110px;
+  float: right;
+  
+  background-color:#e2574c;
+  color: white;
+  border-color: white;
+  
+}
+
+footer{
+  line-height: 1.4em;
+  font-size: 0.8em; 
+  padding: 3em;
+  background-size: cover;
+
+  color: white;
+  background-color: #242424;
+  }
+
+footer a{
+  text-decoration: underline;
+  color: white;
+}
+
+footer span{
+  color: #969696;
 }

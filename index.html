@@ -15,12 +15,12 @@
   </head>
 
 <!--Hilarious To Do List:
-Task: run HTML and CSS through W3C validators to “de-lint” them.
-Task: apply fonts-->
+Task: run HTML and CSS through W3C validators to “de-lint” them.-->
 
   <body>
     <div class="wrapper">
       <header>
+        <!-- Nav bar is 306 px wide, 150 px min for logo, 64px min for cart = 520 px -->
         <img src="images/aloha-logo.svg" alt="Logo" id="logo">
         <ul>
           <li><a href="">About</a></li>
@@ -99,8 +99,10 @@ Task: apply fonts-->
         <h2><em>Sign-up for </em><strong>Updates</strong></h2>
         <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <form action="" onsubmit="return someKindOfFormValidation"> <!-- action=""-->
-          <textarea>Your Email</textarea>
-          <button type="submit">Subscribe</button>
+          <div class="txtWrap">
+            <textarea>Your Email</textarea>
+            <button type="submit">Subscribe</button>
+          </div>
         </form>
       </section>
 
@@ -109,12 +111,18 @@ Task: apply fonts-->
         <p>Powered by HTML and CSS.</p>
         <br>
         <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
-        <span>1490 W Broadway</span>
         <br>
-        <span>Vanouver, BC, Canada</span>
+        <span>1490 W Broadway
+        <br>
+        Vanouver, BC, Canada</span>
+        <br><br>
 
         <div>
-          <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-pinterest"></i><i class="fa fa-google-plus"></i>
+          <i class="fa fa-facebook"></i> Facebook<br>
+          <i class="fa fa-twitter"></i> Twitter<br>
+          <i class="fa fa-instagram"></i> Instagram<br>
+          <i class="fa fa-pinterest"></i> Pinterest<br>
+          <i class="fa fa-google-plus"></i> Google+<br>
 
         </div>
 
