@@ -1,6 +1,5 @@
 /*
 Typography:
-
 The base font size is 16px for all screen width 600px and up (the mobile base font size is 14px)
 The body font family is Raleway Light
 The headings font family is Playfair Display
@@ -18,10 +17,6 @@ The width of the desktop-friendly content area is 1240px
 If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
 */
 
-* {
-  padding: 0;
-  margin: 0;
-}
 .wrapper{
   max-width:1240px;
 }
@@ -50,25 +45,23 @@ strong{
 }
 header{
   text-align: center;
-  max-height: 4em;
-  min-height: 4em;
+  max-height: 4rem;
+  min-height: 4rem;
 }
 header ul{
     list-style-type: none;
     position: relative;
-    top: 1.5em;
+    top: 1.5rem;
     display: inline;
     text-transform: uppercase;
 }
-header li{
+header a, header li{
   display: inline;
-}
-header a{
-   color: #e2574c;
+  color: #e2574c;
 }
 header img{
-  min-height: 1em;
-  max-height: 4em;
+  min-height: 1rem;
+  max-height: 4rem;
   width: auto;
 }
 h2, .main p{
@@ -76,9 +69,9 @@ h2, .main p{
 }
 
 h2{
-  line-height: 2em;
-  padding-top: 1em;
-  font-size: 2em;
+  line-height: 2rem;
+  padding-top: 1rem;
+  font-size: 2rem;
 }
 
 #cart{
@@ -90,10 +83,10 @@ h2{
 }
 
 .hero{
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%), url("../images/banner-girl.png") no-repeat center,
-  url("../images/flower-bkgd.jpg");
-  background-size: auto, auto 37vh, cover;
-  background-position: auto, center, auto;
+  background-image: url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg"), linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 37vh, cover;
   text-align: center;
   height: 25vh;
   padding-top: 12vh;
@@ -107,22 +100,22 @@ h2{
     font-family: "Raleway Light"
 }
 .main p, .email p{
-  line-height: 1.6em;
-  font-size:  0.9em;
+  line-height: 1.6rem;
+  font-size:  0.9rem;
   font-weight: 600;
 }
 .main p{
   color: #969696;
 }
 .main ul{
-  margin-top: 3.5em;
+  margin-top: 3.5rem;
 }
 .main li {
   display: inline-block;
-  width: 7em;
-  height: 4em;
-  padding-top: 3em;
-  margin-bottom: 0.25em;
+  width: 7rem;
+  height: 4rem;
+  padding-top: 3rem;
+  margin-bottom: 0.25rem;
   text-align: center;
 
   background-size: cover;
@@ -131,8 +124,8 @@ h2{
   color: white;
 }
 
-.main li.double {
-  width: 14em;
+.double {
+  width: 14rem;
 }
 
 .mens {
@@ -153,68 +146,62 @@ h2{
 .womens {
   background-image: url("../images/womens-category.jpg");
 }
-
 .email {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
-  background-size: cover;
-  padding-bottom: 4em;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
+  background-size: cover, cover;
+  background-position-y: 100%;
+  padding-bottom: 4rem;
   text-align: center;
   color: white;
 }
 .email h2{
   color: white;
 }
-
 .email:hover .email:focus{
   transform: scale(1.2);
 }
 .txtWrap {
   display:inline-block;
   width: 70%;
-  border-radius: 2em;
+  border-radius: 2rem;
   background-color: white;
 
 }
 .email textarea{
-  margin-top: 0.35em;
-  border-radius: 2em;
+  margin-top: 0.35rem;
+  border-radius: 2rem;
   border: none;
   box-shadow: none;
   width: 70%;
   float: left;
 }
 button {
-  margin:0.1em 0.1em;
-  padding: 0.5em 1em;
-  border-radius: 2em;
+  margin:0.1rem 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
   text-shadow: none;
   box-shadow: none;
   text-align: center;
   width: 25%;
   min-width: 110px;
   float: right;
-  
   background-color:#e2574c;
   color: white;
   border-color: white;
-  
 }
-
 footer{
-  line-height: 1.4em;
-  font-size: 0.8em; 
-  padding: 3em;
+  line-height: 1.4rem;
+  font-size: 0.8rem; 
+  padding: 3rem;
   background-size: cover;
 
   color: white;
   background-color: #242424;
   }
-
 footer a{
   text-decoration: underline;
   color: white;
 }
-
 footer span{
   color: #969696;
 }
