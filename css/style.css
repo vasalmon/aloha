@@ -10,27 +10,23 @@ The HEX code for the dark grey background colour is the footer is #242424
 The HEX code for the link hover state colour is #b64036
 
 The HEX code for the light grey border colour is #d7d7d7
-
-Screen Sizes:
-
-The width of the desktop-friendly content area is 1240px
 If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
 */
-body {
+
+body{
   font-family: "Raleway Light";
   color: #2d2d2d;
+}
+header{
+  font-family: "Raleway Medium";
+  font-weight: 600;
 }
 a{
   text-decoration: none;
 }
-header a{
-  color: #e2574c;
-}
-a:hover{
-  color: #b64036;
-}
 
-h1, h2, header{
+/*Headings -------------------------------------------*/
+h1, h2{
   font-family: "Playfair Display";
 }
 h2, header{
@@ -43,35 +39,47 @@ em{
 strong{
   font-family: "Playfair Display Bold"
 }
+
+/*Header ------------------------------------------- */
 header{
-  /*2-Cell Flexbox changes row to column on breakpoint*/
+/*2-Cell Flexbox*/
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+}
+header a{
+  color: #e2574c;
+  text-transform: uppercase;
+}
+a:hover{
+  color: #b64036;
 }
 aside {
   /*Nested Image Flexbox*/
 display:flex;
 justify-content:space-between;
+flex-grow: 0;
 }
 nav{
   /*Nested Nav Flexbox*/
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  flex-grow: 10;
+  justify-content: space-around;
 }
 .n-item{
+  align-self: center;
   flex: 1 1 0;
   text-align: center;
-  align-self: center;
+
 }
 aside img{
   max-height: 4rem;
 }
+
+/* "Hand-Crafted Styles" including Categories (main)-------*/
 h2, .main p{
   text-align: center;
 }
-
 h2{
   line-height: 2rem;
   padding-top: 1rem;
@@ -82,11 +90,12 @@ h2{
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: auto 37vh;
-  text-align: center;
+  color: white;
   height: 25vh;
   padding-top: 12vh;
+  text-align: center;
 
-  color: white;
+
 }
 .hero p{
    text-transform: uppercase;
@@ -186,29 +195,33 @@ button {
   border-color: white;
 }
 footer{
-  line-height: 1.4rem;
-  font-size: 0.8rem; 
-  padding: 3rem;
-  background-size: cover;
-
-  color: white;
   background-color: #242424;
+  background-size: cover;
+  color: white;
+  font-size: 0.8rem; 
+  line-height: 1.4rem;
+  padding: 3rem;
   }
 footer a{
-  text-decoration: underline;
   color: white;
+  text-decoration: underline;
 }
 footer span{
   color: #969696;
 }
 
 @media screen and (min-width:600px){
+/* Header: NavBar and Header Icons --------*/
   header{
-    flex-direction: row;
+    position: relative;
+    height: 4em;
   }
-  .cart{
-    display:none;
+  nav{
+    left: 25%;
+    top: 35%;
+    width: 60%;
+    justify-content: space-between;
+    position: absolute;
   }
-  header::after{
-  }
+  
 }
