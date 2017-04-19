@@ -25,6 +25,10 @@ a{
   text-decoration: none;
 }
 
+li{
+  list-style-type: none;
+}
+
 /*Headings -------------------------------------------*/
 h1, h2{
   font-family: "Playfair Display";
@@ -173,30 +177,34 @@ main p{
 .email h2{
   color: white;
 }
-.email:hover .email:focus{
-  transform: scale(1.2);
-}
+
 .txtWrap {
-  display:inline-block;
-  width: 70%;
   border-radius: 2rem;
   background-color: white;
+  display:flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.2rem 0.2rem 0.6rem;
+  width: 70%;
+  margin: auto;
 
 }
-.email textarea{
-  margin-top: 0.35rem;
+form {
+margin: none;
+
+}
+.email input{
+  flex: 1 1 0;
   border-radius: 2rem;
   border: none;
   box-shadow: none;
-  width: 70%;
-  float: left;
+  width: 40%;
 }
 button {
-  margin:0.1rem 0.1rem;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   text-shadow: none;
   box-shadow: none;
+  border: none;
   text-align: center;
   width: 25%;
   min-width: 110px;
@@ -205,6 +213,8 @@ button {
   color: white;
   border-color: white;
 }
+
+/*Contact Info and Social Media Links -----------*/
 footer{
   background-color: #242424;
   background-size: cover;
