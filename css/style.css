@@ -16,10 +16,6 @@ Screen Sizes:
 The width of the desktop-friendly content area is 1240px
 If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
 */
-
-.wrapper{
-  max-width:1240px;
-}
 body {
   font-family: "Raleway Light";
   color: #2d2d2d;
@@ -27,9 +23,13 @@ body {
 a{
   text-decoration: none;
 }
+header a{
+  color: #e2574c;
+}
 a:hover{
   color: #b64036;
 }
+
 h1, h2, header{
   font-family: "Playfair Display";
 }
@@ -44,25 +44,29 @@ strong{
   font-family: "Playfair Display Bold"
 }
 header{
+  /*2-Cell Flexbox changes row to column on breakpoint*/
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+aside {
+  /*Nested Image Flexbox*/
+display:flex;
+justify-content:space-between;
+}
+nav{
+  /*Nested Nav Flexbox*/
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.n-item{
+  flex: 1 1 0;
   text-align: center;
+  align-self: center;
+}
+aside img{
   max-height: 4rem;
-  min-height: 4rem;
-}
-header ul{
-    list-style-type: none;
-    position: relative;
-    top: 1.5rem;
-    display: inline;
-    text-transform: uppercase;
-}
-header a, header li{
-  display: inline;
-  color: #e2574c;
-}
-header img{
-  min-height: 1rem;
-  max-height: 4rem;
-  width: auto;
 }
 h2, .main p{
   text-align: center;
@@ -73,20 +77,11 @@ h2{
   padding-top: 1rem;
   font-size: 2rem;
 }
-
-#cart{
-  float: right;
-}
-
-#logo{
-  float:left;
-}
-
 .hero{
   background-image: url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg"), linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat;
   background-position: center;
-  background-size: auto 37vh, cover;
+  background-size: auto 37vh;
   text-align: center;
   height: 25vh;
   padding-top: 12vh;
@@ -111,21 +106,22 @@ h2{
   margin-top: 3.5rem;
 }
 .main li {
-  display: inline-block;
-  width: 7rem;
-  height: 4rem;
-  padding-top: 3rem;
-  margin-bottom: 0.25rem;
-  text-align: center;
-
+  height:5rem;
+  width:5rem;
+  display: flex;
+  flex-flow: row, wrap;
+  flex: 1 1 1rem;
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
+  text-align: center;
   color: white;
 }
 
-.double {
-  width: 14rem;
+.main li.double {
+/* Requires both classes and an element to clobber the .main li width above */
+  width:10rem;
+  flex-grow: 2;
 }
 
 .mens {
@@ -149,7 +145,7 @@ h2{
 .email {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
   background-size: cover, cover;
-  background-position-y: 100%;
+  background-position: bottom;
   padding-bottom: 4rem;
   text-align: center;
   color: white;
@@ -204,4 +200,15 @@ footer a{
 }
 footer span{
   color: #969696;
+}
+
+@media screen and (min-width:600px){
+  header{
+    flex-direction: row;
+  }
+  .cart{
+    display:none;
+  }
+  header::after{
+  }
 }
