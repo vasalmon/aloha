@@ -75,9 +75,8 @@ nav{
 aside img{
   max-height: 4rem;
 }
-
-/* "Hand-Crafted Styles" including Categories (main)-------*/
-h2, .main p{
+/* Hero -------------------------------------------------*/
+h2, main p{
   text-align: center;
 }
 h2{
@@ -86,71 +85,83 @@ h2{
   font-size: 2rem;
 }
 .hero{
-  background-image: url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg"), linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%);
-  background-repeat: no-repeat, repeat;
+  background-image: url("../images/banner-girl.png"), 
+  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
+  url("../images/flower-bkgd.jpg");
+  background-repeat: no-repeat, no-repeat, repeat;
   background-position: center;
   background-size: auto 37vh;
   color: white;
   height: 25vh;
   padding-top: 12vh;
   text-align: center;
-
-
 }
 .hero p{
    text-transform: uppercase;
 }
-.main{
+/* "Hand-Crafted Styles" Main section (categories)------*/
+main{
     font-family: "Raleway Light"
 }
-.main p, .email p{
+main p, .email p{
   line-height: 1.6rem;
   font-size:  0.9rem;
   font-weight: 600;
 }
-.main p{
+main p{
   color: #969696;
+  margin-bottom: 3.5rem;
 }
-.main ul{
-  margin-top: 3.5rem;
-}
-.main li {
-  height:5rem;
-  width:5rem;
+.category{
+  /*styling for 2 row flexboxes of categories */
+  align-content: center;
+  align-items: stretch;
   display: flex;
-  flex-flow: row, wrap;
-  flex: 1 1 1rem;
-  background-size: cover;
-  background-position: center;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-}
 
-.main li.double {
-/* Requires both classes and an element to clobber the .main li width above */
-  width:10rem;
-  flex-grow: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 12rem;
+  justify-content: center;
+  
+}
+.mens, .trends, .glasses, .sale, .bags, .womens{
+  background-size: cover, cover;
+  background-position: center, center;
+  color: white;
+  flex: 1 1 1rem;
+  margin: 0.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 5.5rem;
+  width: 5rem;
 }
 
 .mens {
-  background-image: url("../images/mens-category.jpg");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
+  url("../images/mens-category.jpg");
 }
 .trends {
-  background-image: url("../images/trends-category.jpg");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
+  url("../images/trends-category.jpg");
 }
 .glasses {
-  background-image: url("../images/glasses-category.jpg");
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
+  url("../images/glasses-category.jpg");
 }
 .sale {
-  background-image: url("../images/sale-category.jpg");
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
+  url("../images/sale-category.jpg");
 }
 .bags {
-  background-image: url("../images/bags-category.jpg");
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
+  url("../images/bags-category.jpg");
 }
 .womens {
-  background-image: url("../images/womens-category.jpg");
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
+  url("../images/womens-category.jpg");
 }
+
+/* Email section (subscribe)----------------------------*/
 .email {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
   background-size: cover, cover;
@@ -223,5 +234,9 @@ footer span{
     justify-content: space-between;
     position: absolute;
   }
-  
+
+@media screen and (min-width: 1200px){
+  nav{
+    width: 50%;
+  }
 }
