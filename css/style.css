@@ -184,7 +184,7 @@ main p{
   display:flex;
   justify-content: space-between;
   padding: 0.2rem 0.2rem 0.2rem 0.6rem;
-  width: 70%;
+  width: 80%;
   margin: auto;
 
 }
@@ -198,6 +198,7 @@ margin: none;
   border: none;
   box-shadow: none;
   width: 40%;
+  color: #969696;
 }
 button {
   padding: 0.5rem 1rem;
@@ -220,17 +221,26 @@ footer{
   background-size: cover;
   color: white;
   font-size: 0.8rem; 
-  line-height: 1.4rem;
+  line-height: 0.8rem;
+  margin-top: 0.5rem;
   padding: 3rem;
+  text-align: center;
   }
 footer a{
   color: white;
   text-decoration: underline;
 }
-footer span{
-  color: #969696;
-}
+footer div{
+  display:flex;
+  justify-content: center;
 
+}
+footer i{
+
+}
+footer span{
+  display:none;
+}
 @media screen and (min-width:600px){
 /* Header: NavBar and Header Icons --------*/
   header{
@@ -245,7 +255,7 @@ footer span{
     position: absolute;
   }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1240px){
   nav{
     width: 50%;
   }
