@@ -1,7 +1,10 @@
-console.log("Hello World!");
-console.log($('.nav'));
+$(function(){
 
-//Smooth Scrolling attempt
+//Code Here
+
+//Form submission in .email
+
+//Smooth Scrolling attempt with Flickity Slider (read the docs)
 $(function() {
   $('nav a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -15,4 +18,7 @@ $(function() {
       }
     }
   });
+});
+
+
 });
