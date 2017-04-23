@@ -120,7 +120,7 @@ h1 {
 h2{
   line-height: 2rem;
   padding-top: 1.7rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 main p, #updates p{
@@ -180,6 +180,8 @@ main p{
   background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
   url("../images/womens-category.jpg");
 }
+
+/* Flickity Carousel Style */
 
 /* Updates section (subscribe)----------------------------*/
 #updates {
