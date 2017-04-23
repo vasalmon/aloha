@@ -13,13 +13,13 @@ The HEX code for the light grey border colour is #d7d7d7
 If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
 */
 
+/* Fonts, Headings, and General Style */
 body{
   font-family: "Raleway Light";
   color: #2d2d2d;
 }
 header{
   font-family: "Raleway Medium";
-  font-weight: 600;
 }
 a{
   text-decoration: none;
@@ -29,7 +29,6 @@ li{
   list-style-type: none;
 }
 
-/*Headings -------------------------------------------*/
 h1, h2{
   font-family: "Playfair Display";
 }
@@ -42,6 +41,10 @@ em{
 }
 strong{
   font-family: "Playfair Display Bold"
+}
+
+wrapper{
+  min-width: 450px;
 }
 
 /*Header ------------------------------------------- */
@@ -59,16 +62,22 @@ a:hover{
 }
 aside {
   /*Nested Image Flexbox*/
+align-items: center;
 display:flex;
 justify-content:space-between;
 flex-grow: 0;
+height: 4rem;
+margin: 0.5rem;
 }
 nav{
   /*Nested Nav Flexbox*/
   display: flex;
   flex-wrap: nowrap;
   flex-grow: 10;
+  font-size: 0.9rem;
   justify-content: space-around;
+  line-height: 2rem;
+
 }
 .n-item{
   align-self: center;
@@ -77,7 +86,7 @@ nav{
 
 }
 aside img{
-  max-height: 4rem;
+  max-height: 3rem;
 }
 /* Hero -------------------------------------------------*/
 h2, main p{
@@ -107,7 +116,7 @@ h2{
 main{
     font-family: "Raleway Light"
 }
-main p, .email p{
+main p, #updates p{
   line-height: 1.6rem;
   font-size:  0.9rem;
   font-weight: 600;
@@ -165,8 +174,8 @@ main p{
   url("../images/womens-category.jpg");
 }
 
-/* Email section (subscribe)----------------------------*/
-.email {
+/* Updates section (subscribe)----------------------------*/
+#updates {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
   background-size: cover, cover;
   background-position: bottom;
@@ -174,7 +183,7 @@ main p{
   text-align: center;
   color: white;
 }
-.email h2{
+#updates h2{
   color: white;
 }
 
@@ -192,7 +201,7 @@ form {
 margin: none;
 
 }
-.email input{
+#updates input{
   flex: 1 1 0;
   border-radius: 2rem;
   border: none;

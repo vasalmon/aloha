@@ -20,5 +20,14 @@ $(function() {
   });
 });
 
+//  Codepen submission code to use with .email
+//  $('#my-form').on('submit', function(event){
+//    event.preventDefault();
+//    if ($('#my-text-input').val()==''){
+//      console.log('The field is empty!');
+//    } else {
+//      console.log('You put something in the field!');       
+//    }
+//  });
 
 });
