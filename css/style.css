@@ -182,12 +182,17 @@ main p{
 }
 
 /* Flickity Carousel Style------------------------------------------ */
+.flickity-page-dots{
+  padding-bottom: 2rem;
+}
 .main-carousel{
   text-align: center;
   height: 55vh;
 }
 .carousel-cell{
+  margin-bottom: 0;
   padding-top: 2.5rem;
+  padding-bottom: 0;
   width: 100%;
 }
 h3{
@@ -207,7 +212,7 @@ h4, h5{
 h4{
   font-size: 0.9rem;
   line-height: 0.9rem;
-  padding-top: 0;
+  padding: 0;
 }
 
 h5{
@@ -289,16 +294,18 @@ footer a{
   color: white;
   text-decoration: underline;
 }
-footer div{
+
+                         /*Social Media Bars*/
+.social{
   display:flex;
   justify-content: center;
 }
-footer span{
+.socNames{
   display:none;
 }
 
-@media screen and (min-width:600px){
-/* Header: NavBar and Header Icons ----------------------------------*/
+@media screen and (min-width:600px){  /*Tablet Breakpoint ------------*/
+                /* Header: NavBar and Header Icons*/
   header{
     position: relative;
     height: 5.5rem;
