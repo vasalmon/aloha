@@ -212,11 +212,12 @@ h5{
 /* Updates section (subscribe)---------------------------------------*/
 #updates {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
-  background-size: cover, cover;
-  background-position: bottom;
+  background-size: cover, 400%;
+  background-position: bottom, bottom;
+  color: white;
+  height: 28vh;
   padding-bottom: 4rem;
   text-align: center;
-  color: white;
 }
 #updates h2{
   color: white;
@@ -234,15 +235,21 @@ h5{
 }
 form {
 margin: none;
-
+                /*Your Email "Subscribe" Bar*/
 }
 #updates input{
   flex: 1 1 0;
   border-radius: 2rem;
   border: none;
   box-shadow: none;
-  width: 40%;
   color: #969696;
+  padding: 0.5rem 1rem;
+  width: 40%;
+}
+
+#updates input:focus{
+  outline:none;
+  color: black;
 }
 button {
   padding: 0.5rem 1rem;
@@ -281,6 +288,7 @@ footer div{
 footer span{
   display:none;
 }
+
 @media screen and (min-width:600px){
 /* Header: NavBar and Header Icons ----------------------------------*/
   header{
