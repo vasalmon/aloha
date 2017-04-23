@@ -14,7 +14,9 @@
 
 <!--Hilarious To Do List: 
 - Scale background image on re-size
-- Add heading text shadow 
+- Flickity 
+    - Autoplay
+    - Center Image and text in carousel-cell
 - Run HTML and CSS through W3C validators to “de-lint” them.
 -->
 
@@ -68,46 +70,76 @@
 
       <section id="featured">
         <h2><em>Most-Loved </em><strong>Products</strong></h2>
-        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-          <ul>
-            <li>
-              <picture>
-                <img src="images/blue-hipster-backpack.jpg">
-              </picture>
-              <h5>Bags</h5>
-              <h3>Blue Hipster Backpack</h3>
-              <h4>$69.00</h4>
-            </li>
-
-            <li>
+        <div class="carousel">
+          <div class="main-carousel" data-flickity='{ "autoPlay": "true", "contain": true }'>
+            <div class = "carousel-cell">
               <picture>
                 <img src="images/stretch-knit-dress.jpg">
               </picture>
               <h5>Dresses</h5>
               <h3>Stretch Knit Dress</h3>
               <h4>$169.00</h4>
-            </li>
-
-            <li> 
+            </div>
+            <div class = "carousel-cell">
               <picture>
                 <img src="images/cotton-blue-shirt.jpg">
               </picture>
               <h5>Shirts</h5>
               <h3>Cotton Blue Shirt</h3>
               <h4>$89.00</h4>
-            </li>
-            <li>
+            </div>          
+            <div class = "carousel-cell">
               <picture>
                 <img src="images/checked-stretch-dress.jpg">
               </picture>
               <h5>Dresses</h5>
               <h3>Checked Stress Dress</h3>
               <h4>$129.00</h4>
-            </li>
-          </ul>
-          <picture>
-          <img class="carousel">
-          </picture>
+            </div>
+            <div class = "carousel-cell">
+              <picture>
+                <img src="images/blue-hipster-backpack.jpg">
+              </picture>
+              <h5>Bags</h5>
+              <h3>Blue Hipster Backpack</h3>
+              <h4>$69.00</h4>
+            </div>
+
+            <div class = "carousel-cell">
+              <picture>
+                <img src="images/denim-overall-shorts.jpg">
+              </picture>
+              <h5>Denim</h5>
+              <h3>Denim Overall Shorts</h3>
+              <h4>$89.00</h4>
+            </div>
+            <div class = "carousel-cell">
+              <picture>
+                <img src="images/pink-dotted-dress.jpg">
+              </picture>
+              <h5>Dresses</h5>
+              <h3>Pink Dotted Dress</h3>
+              <h4>$99.00</h4>
+            </div>
+            <div class = "carousel-cell">
+              <picture>
+                <img src="images/blue-silk-dress.jpg">
+              </picture>
+              <h5>Dresses</h5>
+              <h3>Blue Silk Dress</h3>
+              <h4>$119.00</h4>
+            </div>
+            <div class = "carousel-cell">
+              <picture>
+                <img src="images/cotton-yellow-tshirt.jpg">
+              </picture>
+              <h5>Shirts</h5>
+              <h3>Cotton Yellow T-shirt</h3>
+              <h4>$69.00</h4>
+            </div>
+  
+
+          </div>
         </div>
       </section>
 

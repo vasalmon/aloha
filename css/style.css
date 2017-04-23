@@ -43,7 +43,7 @@ strong{
   font-family: "Playfair Display Bold"
 }
 
-/*Header ------------------------------------------- */
+/*Header ----------------------------------------------------------- */
 header{
 /*2-Cell Flexbox*/
   display: flex;
@@ -88,7 +88,7 @@ nav{
 aside img{
   max-height: 3rem;
 }
-/* Hero -------------------------------------------------*/
+/* Hero -------------------------------------------------------------*/
 h2, main p{
   text-align: center;
 }
@@ -114,9 +114,9 @@ h1 {
    font-weight: 400;
    font-size: 2.2rem;
    padding: 0 4rem;
-   text-shadow: 1px 1px grey;
+   text-shadow: 1px 1px #969696;
 }
-/* "Hand-Crafted Styles" Main section (categories)------*/
+/* "Hand-Crafted Styles" Main section (categories)-------------------*/
 h2{
   line-height: 2rem;
   padding-top: 1.7rem;
@@ -131,7 +131,7 @@ main p{
   margin-bottom: 3.5rem;
 }
 .category{
-  /*styling for 2 row flexboxes of categories */
+  /*styling for 2 single- flexboxes of categories */
   align-content: center;
   align-items: stretch;
   display: flex;
@@ -181,9 +181,35 @@ main p{
   url("../images/womens-category.jpg");
 }
 
-/* Flickity Carousel Style */
+/* Flickity Carousel Style------------------------------------------ */
+.main-carousel{
+  text-align: center;
+  height: 55vh;
+}
+.carousel-cell{
+  width: 100%;
+}
+h3{
+  color:#e2574c;
+  font-family: "Playfair Display";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 
-/* Updates section (subscribe)----------------------------*/
+h4, h5{
+  color: #969696;
+  font-family:"Raleway Light";
+}
+h4{
+  font-size: 0.9rem;
+}
+
+h5{
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* Updates section (subscribe)---------------------------------------*/
 #updates {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
   background-size: cover, cover;
@@ -233,7 +259,7 @@ button {
   border-color: white;
 }
 
-/*Contact Info and Social Media Links -----------*/
+/*Contact Info and Social Media Links -------------------------------*/
 footer{
   background-color: #242424;
   background-size: cover;
@@ -256,7 +282,7 @@ footer span{
   display:none;
 }
 @media screen and (min-width:600px){
-/* Header: NavBar and Header Icons --------*/
+/* Header: NavBar and Header Icons ----------------------------------*/
   header{
     position: relative;
     height: 5.5rem;

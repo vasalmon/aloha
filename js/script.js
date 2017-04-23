@@ -1,10 +1,8 @@
 $(function(){
 
-//Code Here
+//Initialized Flickity with HTML
 
-//Form submission in .email
-
-//Smooth Scrolling
+//Flickity: Smooth Scrolling
   $('nav a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -17,6 +15,7 @@ $(function(){
       }
     }
   });
+
 
 //  Codepen submission code to use with .email
 //  $('#my-form').on('submit', function(event){
