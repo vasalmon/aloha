@@ -52,6 +52,7 @@ header{
 }
 header a{
   color: #e2574c;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 a:hover{
@@ -112,7 +113,7 @@ h2, main p{
 }
 h1 {
    font-weight: 400;
-   font-size: 2.5rem;
+   font-size: 2.2rem;
    padding: 0 4rem;
    text-shadow: 1px 1px #969696;
 }
@@ -120,7 +121,7 @@ h1 {
 h2{
   line-height: 2rem;
   padding-top: 1.7rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 main p, #updates p{
@@ -139,7 +140,7 @@ main p{
 
   flex-direction: row;
   flex-wrap: wrap;
-  height: 15rem;
+  height: 13.5rem;
   justify-content: center;
   
 }
@@ -184,16 +185,16 @@ main p{
 
 /* Flickity Carousel Style------------------------------------------ */
 .flickity-page-dots{
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .main-carousel{
   text-align: center;
-  height: 55vh;
+  height: 54vh;
+  padding-bottom: 0.5rem;
 }
 .carousel-cell{
   margin-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   width: 100%;
 }
 h3{
@@ -226,11 +227,12 @@ h5{
 /* Updates section (subscribe)---------------------------------------*/
 #updates {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
-  background-size: cover, 350%;
+  background-size: cover, 325%;
   background-position: bottom, bottom;
   color: white;
-  height: 28vh;
-  padding-bottom: 4rem;
+  height: 33vh;
+  margin-top: 2rem;
+  padding-top: 1rem;
   text-align: center;
 }
 #updates h2{
