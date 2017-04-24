@@ -1,5 +1,14 @@
 $(function(){
-//Initialized Flickity with HTML
+//Initialized Flickity
+$('.main-carousel').flickity({
+  // options
+  autoPlay: true,
+  cellAlign: 'left',
+  contain: true,
+  wrapAround:true,
+  pauseAutoPlayOnHover:false,
+  prevNextButtons: false
+});
 //Flickity: Smooth Scrolling
   $('nav a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
