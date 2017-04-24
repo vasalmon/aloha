@@ -268,7 +268,7 @@ h2{
   font-size: 2.2rem;
 }
 
-main p, #updates p{
+main p, .email p{
   line-height: 2rem;
 }
 main p{
@@ -374,7 +374,7 @@ h5{
   text-transform: uppercase;
 }
 /* Updates section (subscribe)---------------------------------------*/
-#updates {
+.email {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
   background-size: cover, 90rem;
   background-position: bottom, bottom;
@@ -385,10 +385,10 @@ h5{
   padding-top: 0.2rem;
   text-align: center;
 }
-#updates p{
+.email p{
   font-size: 1rem;
 }
-#updates h2{
+.email h2{
   color: white;
   margin-top: 1rem;
   text-shadow: 1px 1px #969696;
@@ -403,16 +403,15 @@ h5{
   margin: 1.5rem auto;
 }
                 /*Your Email "Subscribe" Bar*/
-#updates input{
+.email input{
   flex: 1 1 0;
   border-radius: 2rem;
   border: none;
   box-shadow: none;
   color: black;
   padding: 0.5rem 1rem;
-  width: 40%;
 }
-#updates input:focus{
+.email input:focus{
   outline:none;
 }
 button {
@@ -424,6 +423,7 @@ button {
   text-align: center;
   width: 25%;
   min-width: 110px;
+  max-width: 110px;
   float: right;
   background-color:#e2574c;
   color: white;
@@ -497,8 +497,10 @@ footer span p {
   
 }
 @media screen and (min-width: 1240px){
-  body{
+.wrapper{
    font-size:16px;
+   max-width: 1240px;
+   margin: 0 auto;
   }
   /*Logo and Cart -------------------------*/
   aside img{
