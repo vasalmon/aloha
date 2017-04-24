@@ -177,7 +177,7 @@
 
 
 
-/* Fonts, Headings, and General Style */
+/* Headings, and General Style */
 body{
   font-family: "Raleway Light";
   font-size: 14px;
@@ -486,18 +486,18 @@ footer span p {
 
 @media screen and (min-width:600px){  /*Tablet Breakpoint ------------*/
                 /* Header: NavBar and Header Icons*/
-aside{
-  border: none;
-}
+  aside{
+    border: none;
+  }
 
-body{
-  font-size: 16px;
-}
-header{
-    position: relative;
-    height: 5rem;
-    justify-content: center;
-}
+  body{
+    font-size: 16px;
+  }
+  header{
+      position: relative;
+      height: 5rem;
+      justify-content: center;
+  }
   nav{
     align-self: center;
     position: absolute;
@@ -508,7 +508,31 @@ background-size: 15vh cover;
   }
 
 @media screen and (min-width: 1240px){
-  nav{
-    width: 50%;
+  body{
+   font-size:16px;
   }
+  /*Logo and Cart -------------------------*/
+  aside img{
+    max-height: 4rem;
+  }
+  header{
+    height: 6rem;
+  }
+  /*Nav Bar--------------------------------*/
+  .n-item a{
+    font-size: 1rem;
+  }
+  /*Hero-----------------------------------*/
+  .hero{
+    padding-top:22vh;
+    height:39vh;
+    background-position: center, center 6.2vh, center;
+    background-size: auto, 28vh, auto 100%;
+  }
+  h1{
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;  
+  }
+
 }
