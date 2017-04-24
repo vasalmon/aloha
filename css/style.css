@@ -61,8 +61,7 @@ a:hover{
 aside {
   /*Nested Image Flexbox*/
 align-items: center;
-border: 1rem 1rem 1rem 1rem;
-border-color: black;
+border-bottom: 1px RGBa(150,150,150,0.4) solid;
 display:flex;
 justify-content:space-between;
 flex-grow: 0;
