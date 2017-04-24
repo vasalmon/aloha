@@ -227,12 +227,13 @@ h5{
 /* Updates section (subscribe)---------------------------------------*/
 #updates {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
-  background-size: cover, 325%;
+  background-size: cover, 350%;
   background-position: bottom, bottom;
   color: white;
   height: 33vh;
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-bottom:1rem;
+  padding-top: 0.2rem;
   text-align: center;
 }
 #updates h2{
@@ -285,25 +286,42 @@ footer{
   background-color: #242424;
   background-size: cover;
   color: white;
-  font-family: "Raleway-Light";
-  font-size: 1.1rem;
-  line-height: 0.6rem;
+  font-family: "Playfair Display";
+  font-size: 0.9rem;
+  height: 21vh;
+  line-height: 0.5rem;
   margin-top: 0.5rem;
   padding: 3rem;
   text-align: center;
   }
 footer a{
   color: white;
-  line-height: 2.5rem;
+  line-height: 2rem;
   text-decoration: underline;
 }
 
-                         /*Social Media Bars*/
-.social{
-  display:flex;
-  justify-content: center;
+footer span p {
+  color: #969696;
 }
-.socNames{
+
+                         /*Social Media Bars*/
+.social{  /*Flexparent of 2 Flexboxes*/
+  display:flex;
+  flex-flow: column, nowrap;
+  justify-content: space-around;
+  margin: 3rem auto 0 auto;
+  width: 9rem;
+}
+.socIcons{  /*Flexbox of social media icons */
+  display:flex;
+  flex: 1 1 0;
+  justify-content: space-around;
+}
+.socIcons i{
+  flex: 1 1 0;
+  font-size: 0.8rem;
+}
+.socNames{  /*Flexbox of social media names */
   display:none;
 }
 
