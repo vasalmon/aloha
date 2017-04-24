@@ -1,7 +1,5 @@
 $(function(){
-
 //Initialized Flickity with HTML
-
 //Flickity: Smooth Scrolling
   $('nav a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -15,16 +13,13 @@ $(function(){
       }
     }
   });
-
-
-//  Codepen submission code to use with .email
-//  $('#my-form').on('submit', function(event){
-//    event.preventDefault();
-//    if ($('#my-text-input').val()==''){
-//      console.log('The field is empty!');
-//    } else {
-//      console.log('You put something in the field!');       
-//    }
-//  });
-
+//Subscribe to Mailing List
+  $('form button').on('click', function(event){
+    event.preventDefault();
+    if ($('form input').val()==''){
+      alert('Please input your e-mail address.');
+    } else {
+      alert('Thanks for subscribing!');       
+    }
+  });
 });
