@@ -128,22 +128,7 @@
   cursor: grabbing;
 }
 
-/* ---- previous/next buttons ---- */
 
-.flickity-prev-next-button {
-  position: absolute;
-  top: 50%;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background: white;
-  background: hsla(0, 0%, 100%, 0.75);
-  cursor: pointer;
-  /* vertically center */
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
 
 /* ---- page dots ---- */
 
@@ -175,13 +160,14 @@
   opacity: 1;
 }
 
-
-
 /* Headings, and General Style */
 body{
   font-family: "Raleway Light";
   font-size: 14px;
   color: #2d2d2d;
+}
+.flickity-prev-next-button {
+  display:none;
 }
 header{
   font-family: "Raleway Medium";
@@ -226,7 +212,7 @@ border-bottom: 1px #d7d7d7 solid;
 display:flex;
 justify-content:space-between;
 flex-grow: 0;
-height: 7vh;
+height: 4rem;
 margin: 0.5rem;
 }
 nav{
@@ -256,11 +242,11 @@ h2, main p{
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
   url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: center, center 8vh, center;
-  background-size: auto, 15vh, auto 42vh;
+  background-position: center, center 2rem, center;
+  background-size: auto, 10rem, auto 30rem;
   color: white;
-  height: 29vh;
-  padding-top: 13vh;
+  height: 16.5rem;
+  padding-top: 8.5rem;
   text-align: center;
 }
 .hero p{
@@ -271,7 +257,7 @@ h2, main p{
 }
 h1 {
    font-weight: 400;
-   font-size: 2.2rem;
+   font-size: 2rem;
    padding: 0 4rem;
    text-shadow: 1px 1px #969696;
 }
@@ -281,6 +267,7 @@ h2{
   padding-top: 1.7rem;
   font-size: 2.2rem;
 }
+
 main p, #updates p{
   line-height: 2rem;
 }
@@ -288,9 +275,11 @@ main p{
   color: #242424;
   font-size: 1.1rem;
   margin-bottom: 3.5rem;
+  max-width:600px;
+  text-align: center;
 }
 .category{
-  /*styling for 2 single- flexboxes of categories */
+  /*styling for flexbox categories */
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -350,7 +339,7 @@ main p{
 }
 .main-carousel{
   text-align: center;
-  height: 54vh;
+  height: 33rem;
   padding-bottom: 0.5rem;
 
 }
@@ -389,7 +378,7 @@ h5{
   background-size: cover, 90rem;
   background-position: bottom, bottom;
   color: white;
-  height: 33vh;
+  height: 19.5rem;
   margin-top: 2rem;
   padding-bottom:1rem;
   padding-top: 0.2rem;
@@ -447,7 +436,7 @@ footer{
   color: white;
   font-family: "Playfair Display";
   font-size: 0.9rem;
-  height: 21vh;
+  height: 13rem;
   line-height: 0.5rem;
   margin-top: 0.5rem;
   padding: 3rem;
@@ -489,14 +478,13 @@ footer span p {
   aside{
     border: none;
   }
-
   body{
     font-size: 16px;
   }
   header{
-      position: relative;
-      height: 5rem;
-      justify-content: center;
+    position: relative;
+    height: 5rem;
+    justify-content: center;
   }
   nav{
     align-self: center;
@@ -504,9 +492,10 @@ footer span p {
     left: 8%;
   }
   .hero {
-background-size: 15vh cover;
+    background-size: 15vh cover;
   }
-
+  
+}
 @media screen and (min-width: 1240px){
   body{
    font-size:16px;
@@ -519,20 +508,39 @@ background-size: 15vh cover;
     height: 6rem;
   }
   /*Nav Bar--------------------------------*/
+  nav{
+    left:15%;
+  }
   .n-item a{
     font-size: 1rem;
   }
   /*Hero-----------------------------------*/
   .hero{
-    padding-top:22vh;
-    height:39vh;
-    background-position: center, center 6.2vh, center;
-    background-size: auto, 28vh, auto 100%;
+    padding-top:13rem;
+    height:22rem;
+    background-position: center, center 4rem, center;
+    background-size: auto, 15.5rem, auto 100%;
   }
   h1{
     font-size: 4rem;
     margin: 0;
     padding: 0;  
   }
-
+  /*Category Tiles-------------------------*/
+  .trends, .glasses, .sale, .bags, .mens, .womens{
+  padding-bottom: 11%;
+  padding-top: 11%;
+  margin: 0;
+  border: 0.25rem;
+  border-style:solid;
+  border-color: white;
+  }
+  .trends, .glasses, .sale, .bags {
+    flex: 1 0 24%;
+    max-width: 24%;
+  }
+  .mens, .womens {
+    flex: 2 0 48.65%;
+    max-width: 48.65%;
+  }
 }
