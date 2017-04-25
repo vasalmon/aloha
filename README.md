@@ -13,43 +13,43 @@ Aloha Apparel also uses several short scripts written in Javascript, often using
 
 ## Navigation
 Compact, easy to use navigation menus clearly expose the layout while incorporating smooth scrolling. If we view the page first as a Tablet, we see a clean looking header.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Nav.jpg">](Aloha Nav on Tablet)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Nav.jpg">
 
 The responsive mobile-first design uses an elegant flexbox solution to quickly and easily compact the width of the header by shifting the order of the flexbox items, pushing the nav to another row and creating a light border.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Nav.jpg">](Aloha Nav on Mobile)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Nav.jpg">
 
 The view from Desktop is similar to Tablet but images are larger for a richer experience.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Nav.jpg">](Aloha Nav on Desktop)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Nav.jpg">
 
 ## Shop
 The shopping area maximizes its use of visual real estate filling as much of the screen with images as possible while retaining a minimal design.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Shop.jpg">](Aloha Shop on Mobile)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Shop.jpg">
 
 In Tablet, flexbox easily pops the tiles onto two lines making better use of the additional width.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Shop.jpg">](Aloha Shop on Tablet)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Shop.jpg">
 
 Finally, in Desktop, the tiles continue to scale to make use of the space available.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Shop.jpg">](Aloha Shop on Desktop)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Shop.jpg">
 
 ## Carousel: Flickity
 The carousel is a jQuery implementation of Flickity with its options set for the cleanest experience. The autoPlay and wrapAround are enabled while the previous and next arrows are disabled for an understated but continuous experience.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Carousel.jpg">](Aloha Carousel on Mobile).
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Carousel.jpg">
 
 As space is available the carousel expands to show more results (2 per line on tablet).
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Carousel.jpg">](Aloha Carousel on Tablet)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Carousel.jpg">
 
 As more space becomes available, the carousel comes alive showcasing 4 results at a time.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Carousel.jpg">](Aloha Carousel on Desktop)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Carousel.jpg">
 
 ## Email Subscription
 One function of the Aloha Apparel website is to allow for e-mail submission. Using Javascript, the default behaviour of the submit button is modified to produce an alert box with some basic form validation.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Email.jpg">](Aloha Email on Mobile)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Email.jpg">
 
 In Tablet view, we can see a successful e-mail submission.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Email.jpg">](Aloha Email on Tablet)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Email.jpg">
 
 In Desktop, we see an unsuccessful submission following an attempt to submit an empty string.
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Email.jpg">](Aloha Email on Desktop)
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Email.jpg">
 
 
 
