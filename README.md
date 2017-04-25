@@ -1,8 +1,15 @@
 # Aloha Apparel Co.
 RED Academy Portfolio Project 01
 
-## Mobile-First, Intuitive Layout
-This apparel sales website uses a responsive, mobile-first approach through scalable units, percentages, and CSS media queries to modify mobile styles along break-points and optimize use for tablets (600px) and desktops (1240px).
+## Introduction
+### Mobile-First, Intuitive Layout
+This apparel sales website uses a responsive, mobile-first approach through scalable units, percentages, and CSS media queries to modify mobile styles along break-points and optimize use for tablets (600px) and desktops (1240px). 
+
+###Intentional Design, Efficient Process
+This was made possible through our use of Flexbox although neither Flexbox nor mobile-first were taught until significant progress on the project was made. This forced a redesign and significant refactoring of the mark-up and style used on this website. I learned how costly refactoring can be and how essential it is to draw out designs on paper and have them with me while I implement a design. The cost savings of these strategies were invaluable when I was using them.
+
+### JQuery: Sleek and Quick
+Aloha Apparel also uses several short scripts written in Javascript, often using the JQuery library. Smooth Scrolling animates link clicks. Flickity animates the slider/carousel. Form validation and behavior modification are built into the subscribe button. 
 
 ## Navigation
 Compact, easy to use navigation menus clearly expose the layout while incorporating smooth scrolling. If we view the page first as a Tablet, we see a clean looking header.
@@ -38,10 +45,11 @@ As more space becomes available, the carousel comes alive showcasing 4 results a
 One function of the Aloha Apparel website is to allow for e-mail submission. Using Javascript, the default behaviour of the submit button is modified to produce an alert box with some basic form validation.
 [<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Mobile%20Email.jpg">](Aloha Email on Mobile)
 
-[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Email.jpg">](Aloha Email on Desktop)
+In Tablet view, we can see a successful e-mail submission.
 [<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Tablet%20Email.jpg">](Aloha Email on Tablet)
 
-
+In Desktop, we see an unsuccessful submission following an attempt to submit an empty string.
+[<img src="https://github.com/vasalmon/aloha/blob/master/readme/Aloha%20Desk%20Email.jpg">](Aloha Email on Desktop)
 
 
 
