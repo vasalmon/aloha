@@ -262,7 +262,7 @@ main p{
   color: #242424;
   font-size: 1.1rem;
   margin: 0 auto;
-  margin-bottom: 3.5rem;
+  margin-bottom: 5rem;
   max-width:600px;
   text-align: center;
 }
@@ -379,7 +379,7 @@ h5{
 .email h2{
   color: white;
   margin-top: 1rem;
-  text-shadow: 1px 1px #969696;
+  text-shadow: 2px 2px #969696;
 }
 .txtWrap {
   border-radius: 2rem;
@@ -476,8 +476,34 @@ footer span p {
   .cart{
     order:3;
   }
-/*Categories */
-
+  h1{
+    font-size: 3rem;
+    margin-top: 1.2rem;
+    text-shadow: 2px 2px 2px grey;
+  }
+/*Category Tiles-------------------------*/
+  .trends, .glasses, .sale, .bags, .mens, .womens{
+  border: 0.25rem;
+  border-style:solid;
+  border-color: white;
+  margin: 0;
+  padding-bottom: 11%;
+  padding-top: 11%;
+  }
+  .trends, .glasses, .sale, .bags {
+    flex: 1 0 24%;
+    max-width: 24%;
+  }
+  .mens, .womens {
+    flex: 2 0 48.6%;
+    max-width: 48.6%;
+  }
+  .mens, .sale{
+   border-left: 0;
+  }
+  .womens, .glasses{
+   border-right: 0;
+  }
   /*Flickity Carousel------------------------*/
     .carousel-main{
    margin: 0 auto;
@@ -574,29 +600,7 @@ footer{
     margin: 0;
     padding: 0;  
   }
-  /*Category Tiles-------------------------*/
-  .trends, .glasses, .sale, .bags, .mens, .womens{
-  border: 0.25rem;
-  border-style:solid;
-  border-color: white;
-  margin: 0;
-  padding-bottom: 11%;
-  padding-top: 11%;
-  }
-  .trends, .glasses, .sale, .bags {
-    flex: 1 0 24%;
-    max-width: 24%;
-  }
-  .mens, .womens {
-    flex: 2 0 48.6%;
-    max-width: 48.6%;
-  }
-  .mens, .sale{
-   border-left: 0;
-  }
-  .womens, .glasses{
-   border-right: 0;
-  }
+  
   /*Flickity Carousel------------------------*/
   .carousel-main{
    max-width: 1240px;
