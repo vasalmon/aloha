@@ -456,24 +456,25 @@ footer span p {
           /*Tablet600 Breakpoint ------------*/
 @media screen and (min-width:600px){  
                 /* Header: NavBar and Header Icons*/
-  header{
+  nav{
     border: none;
   }
   body{
     font-size: 16px;
   }
   header{
-    position: relative;
-    height: 5rem;
-    justify-content: center;
-  }
-  .nav{
-    align-self: center;
-    position: absolute;
-    left: 8%;
+    height: 4rem;
+    justify-content: space-between;
   }
   .hero {
-    background-size: 15vh cover;
+    background-size: 10rem cover;
+  }
+  nav{
+    order: 2;
+    width: 40%;
+  }
+  .cart{
+    order:3;
   }
 /*Categories */
 
@@ -487,6 +488,9 @@ footer span p {
 
 
   /*Email Updates ---------------------------*/
+  .email{
+    height: 22.5rem;
+  }
   .email p{
     font-size: 1.2rem;
     margin: 0 auto;
@@ -518,13 +522,13 @@ footer{
       height: 10rem;
       justify-content: space-around;
       margin: 0;
-      padding: 0;
+      padding: 1rem 0 0 0;
       text-align: left;
       width: 10rem;
     }
       .social i{
         flex: 0;
-        height: 2rem;
+        height: 1.5rem;
         width: 2rem;
       }
       .social a{
