@@ -1,7 +1,8 @@
 # Aloha Apparel Co.
 ### RED Academy Portfolio Project 01
 
-This is my thoughtful description of the moving website I just created.
+## Mobile-First, Intuitive Layout
+The mobile-first approach styles for any browser and uses media queries to modify the styles along break-points 
 
 ## What I Learned
 
