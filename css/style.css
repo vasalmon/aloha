@@ -29,12 +29,16 @@ em{
 strong{
   font-family: "Playfair Display Bold"
 }
-/*Header ----------------------------------------------------------- */
+/*Header --------------------------------------*/
 header{
-align-items: center;
+-ms-flex-align: center;
+    align-items: center;
+display:-ms-flexbox;
 display:flex;
-justify-content:space-between;
-flex-wrap: wrap;
+-ms-flex-pack:justify;
+    justify-content:space-between;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 height: 6.5rem;
 margin: 0.5rem;
 }
@@ -49,12 +53,18 @@ a:hover{
 
 .nav{
   /*Nested Nav Flexbox*/
-  align-self: center;
-  align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  flex-grow: 10;
-  justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-positive: 10;
+      flex-grow: 10;
+  -ms-flex-pack: center;
+      justify-content: center;
   line-height: 2rem;
   margin: 0;
   padding: 0;
@@ -66,14 +76,15 @@ nav{
 }
 .n-item{
   padding: 0 1rem;
-  flex: 0 1 1rem;
+  -ms-flex: 0 1 1rem;
+      flex: 0 1 1rem;
   text-align: center;
 }
 header img{
   max-height: 3rem;
   padding: 0.5rem;
 }
-/* Hero -------------------------------------------------------------*/
+/* Hero --------------------------------------*/
 h2, main p{
   text-align: center;
 }
@@ -100,7 +111,7 @@ h1 {
    padding: 0 4rem;
    text-shadow: 1px 1px #969696;
 }
-/* "Hand-Crafted Styles" Main-------------------*/
+/* "Hand-Crafted Styles" Main----------------*/
 h2{
   line-height: 2rem;
   padding-top: 1.7rem;
@@ -120,11 +131,16 @@ main p{
 }
 .category{
   /*styling for flexbox categories */
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .mens, .trends, .glasses, .sale, .bags, .womens{
   background-size: cover, cover;
@@ -138,11 +154,13 @@ main p{
   padding-top: 22%;
 }
 .trends, .glasses, .sale, .bags {
-  flex: 1 0 48%;
+  -ms-flex: 1 0 48%;
+      flex: 1 0 48%;
   max-width: 50%;
 }
 .mens, .womens {
-  flex: 2 0 100%;
+  -ms-flex: 2 0 100%;
+      flex: 2 0 100%;
   max-width: 100%;
 }
 .mens {
@@ -174,7 +192,7 @@ main p{
   background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25)),
   url("../images/womens-category.jpg");
 }
-/* Most-Loved Products Carousel Style------------------------------------------ */
+/* Most-Loved Products Carousel Style--------*/
 .flickity-page-dots{
   margin-bottom: 1.5rem;
 }
@@ -213,7 +231,7 @@ h5{
   margin-top: 0.5rem;
   text-transform: uppercase;
 }
-/* Updates section (subscribe)---------------------------------------*/
+/* Updates section (subscribe)---------------*/
 .email {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url("../images/wave-bkgd.jpg");
   background-size: cover, 90rem;
@@ -236,15 +254,18 @@ h5{
 .txtWrap {
   border-radius: 2rem;
   background-color: white;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding: 0.2rem 0.2rem 0.2rem 0.6rem;
   width: 80%;
   margin: 1.5rem auto;
 }
                 /*Your Email "Subscribe" Bar*/
 .email input{
-  flex: 1 1 0;
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0;
   border-radius: 2rem;
   border: none;
   box-shadow: none;
@@ -269,7 +290,7 @@ button {
   color: white;
   border-color: white;
 }
-/*Contact Info and Social Media Links -------------------------------*/
+/*Contact Info -----------------------------*/
 footer{
   background-color: #242424;
   background-size: cover;
@@ -290,13 +311,17 @@ footer a{
 footer span p {
   color: #969696;
 }
-                         /*Social Media Bars*/
+/*Social Media Bars--------------------------*/
 .social{  /*Flexparent of 2 Flexboxes*/
+  display:-ms-flexbox;
   display:flex;
-  flex-flow: column, nowrap;
-  justify-content: space-around;
+  -ms-flex-flow: column, nowrap;
+      flex-flow: column, nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 3rem auto 0 auto;
-  flex: 0 1 0;
+  -ms-flex: 0 1 0px;
+      flex: 0 1 0;
   font-size: 0.8rem;
   width: 10rem;
 }
@@ -305,7 +330,7 @@ footer span p {
 }
 
 
-          /*Tablet600 Breakpoint ------------*/
+          /*Tablet600 Breakpoint*/
 @media screen and (min-width:600px){  
                 /* Header: NavBar and Header Icons*/
   nav{
@@ -316,17 +341,20 @@ footer span p {
   }
   header{
     height: 4rem;
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   .hero {
     background-size: 10rem cover;
   }
   nav{
-    order: 2;
+    -ms-flex-order: 2;
+        order: 2;
     width: 40%;
   }
   .cart{
-    order:3;
+    -ms-flex-order:3;
+        order:3;
   }
   h1{
     font-size: 3rem;
@@ -343,11 +371,13 @@ footer span p {
   padding-top: 11%;
   }
   .trends, .glasses, .sale, .bags {
-    flex: 1 0 24%;
+    -ms-flex: 1 0 24%;
+        flex: 1 0 24%;
     max-width: 24%;
   }
   .mens, .womens {
-    flex: 2 0 48.6%;
+    -ms-flex: 2 0 48.6%;
+        flex: 2 0 48.6%;
     max-width: 48.6%;
   }
   .mens, .sale{
@@ -356,7 +386,7 @@ footer span p {
   .womens, .glasses{
    border-right: 0;
   }
-  /*Flickity Carousel------------------------*/
+  /*Flickity Carousel--------------------*/
     .carousel-main{
    margin: 0 auto;
   }
@@ -365,7 +395,7 @@ footer span p {
   }
 
 
-  /*Email Updates ---------------------------*/
+  /*Email Updates -----------------------*/
   .email{
     height: 22.5rem;
   }
@@ -382,10 +412,12 @@ footer span p {
     margin: 0.05rem;
   }
 
-/*Social Media Bar-------------------------------------*/
+/*Social Media Bar----------------------*/
 footer{ 
+    display:-ms-flexbox; 
     display:flex;
-    justify-content:space-between;
+    -ms-flex-pack:justify;
+        justify-content:space-between;
   }
     .aboutTxt{
       font-size: 1rem;
@@ -393,19 +425,23 @@ footer{
       text-align:left;
     }
     .social{
+      display:-ms-flexbox;
       display:flex;
-      flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
       font-family: "Raleway Light";
       font-size: 1.0rem;
       height: 10rem;
-      justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       margin: 0;
       padding: 1rem 0 0 0;
       text-align: left;
       width: 10rem;
     }
       .social i{
-        flex: 0;
+        -ms-flex: 0;
+            flex: 0;
         height: 1.5rem;
         width: 2rem;
       }
@@ -421,7 +457,7 @@ footer{
 
 
 
-            /*Desktop1240 Breakpoint ------------*/
+            /*Desktop1240 Breakpoint*/
 @media screen and (min-width: 1240px){
 .wrapper{
    font-size:16px;
@@ -453,10 +489,10 @@ footer{
     padding: 0;  
   }
   
-  /*Flickity Carousel------------------------*/
+  /*Flickity Carousel-----------------------*/
   .carousel-main{
-   max-width: 1240px;
    margin: 0 auto;
+   max-width: 1240px;
   }
   .carousel-cell{
     width: 25%;
