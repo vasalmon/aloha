@@ -459,18 +459,11 @@ footer span p {
   flex-flow: column, nowrap;
   justify-content: space-around;
   margin: 3rem auto 0 auto;
-  width: 9rem;
-}
-.socIcons{  /*Flexbox of social media icons */
-  display:flex;
-  flex: 1 1 0;
-  justify-content: space-around;
-}
-.socIcons i{
-  flex: 1 1 0;
+  flex: 0 1 0;
   font-size: 0.8rem;
+  width: 10rem;
 }
-.socNames{  /*Flexbox of social media names */
+.social span{  /*Flexbox of social media names */
   display:none;
 }
 
@@ -499,6 +492,17 @@ footer span p {
   .hero {
     background-size: 15vh cover;
   }
+/*Categories */
+
+  /*Flickity Carousel------------------------*/
+    .carousel-main{
+   margin: 0 auto;
+  }
+  .carousel-cell{
+    width: 50%;
+  }
+
+
   /*Email Updates ---------------------------*/
   .email p{
     font-size: 1.2rem;
@@ -512,12 +516,47 @@ footer span p {
   form button{
     margin: 0.05rem;
   }
+
+/*Social Media Bar-------------------------------------*/
+footer{ 
+    display:flex;
+    justify-content:space-between;
+  }
+    .aboutTxt{
+      font-size: 1rem;
+      padding-top: 0.5rem;
+      text-align:left;
+    }
+    .social{
+      display:flex;
+      flex-direction: column;
+      font-family: "Raleway Light";
+      font-size: 1.0rem;
+      height: 10rem;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      width: 10rem;
+    }
+      .social i{
+        flex: 0;
+        height: 2rem;
+        width: 2rem;
+      }
+      .social a{
+        text-decoration: none;
+        width: 10rem;
+      }
+      .social span{
+        display: inline;
+        text-align: left;
+      }
 }
 
 
+
             /*Desktop1240 Breakpoint ------------*/
-
-
 @media screen and (min-width: 1240px){
 .wrapper{
    font-size:16px;
@@ -582,33 +621,6 @@ footer span p {
   /*Updates*/
   .email{
     background-size: cover;
-  /*Social Media */
   }
-  footer{ /* Flex Parent of aboutTxt and social*/
-    display:flex;
-    justify-content:space-between;
-  }
-    .aboutTxt{
-      font-size: 1rem;
-      padding-top: 0.5rem;
-      text-align:left;
-    }
-    .social{
-      align-items: center;
-      display:flex; /*Flex parent of socIcons and socNames*/
-      margin: 0;
-    }
-      .socIcons, .socNames{
-        align-items:center;
-        display: flex; /*Flex parent of i */
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-around;
-        margin: 0;
-        padding: 0;
-      }
-      .socIcons i{
-        flex: 0;
-      }
-
+  
 }
