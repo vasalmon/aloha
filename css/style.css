@@ -91,23 +91,18 @@
 .flickity-enabled {
   position: relative;
 }
-
 .flickity-enabled:focus { outline: none; }
-
 .flickity-viewport {
   overflow: hidden;
   position: relative;
   height: 100%;
 }
-
 .flickity-slider {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-
 /* draggable */
-
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
           tap-highlight-color: transparent;
@@ -116,22 +111,16 @@
       -ms-user-select: none;
           user-select: none;
 }
-
 .flickity-enabled.is-draggable .flickity-viewport {
   cursor: move;
   cursor: -webkit-grab;
   cursor: grab;
 }
-
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-
-
-
 /* ---- page dots ---- */
-
 .flickity-page-dots {
   position: absolute;
   width: 100%;
@@ -142,9 +131,7 @@
   text-align: center;
   line-height: 1;
 }
-
 .flickity-rtl .flickity-page-dots { direction: rtl; }
-
 .flickity-page-dots .dot {
   display: inline-block;
   width: 10px;
@@ -155,12 +142,11 @@
   opacity: 0.25;
   cursor: pointer;
 }
-
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
 
-/* Headings, and General Style */
+/* Headings, and General Style ------------------------------*/
 body{
   font-family: "Raleway Light";
   font-size: 14px;
@@ -193,9 +179,12 @@ strong{
 }
 /*Header ----------------------------------------------------------- */
 header{
-/*2-Cell Flexbox*/
-  display: flex;
-  flex-direction: column;
+align-items: center;
+display:flex;
+justify-content:space-between;
+flex-wrap: wrap;
+height: 6.5rem;
+margin: 0.5rem;
 }
 header a{
   color: #e2574c;
@@ -205,17 +194,8 @@ header a{
 a:hover{
   color: #b64036;
 }
-aside {
-  /*Nested Image Flexbox*/
-align-items: center;
-border-bottom: 1px #d7d7d7 solid;
-display:flex;
-justify-content:space-between;
-flex-grow: 0;
-height: 4rem;
-margin: 0.5rem;
-}
-nav{
+
+.nav{
   /*Nested Nav Flexbox*/
   align-self: center;
   align-content: center;
@@ -224,15 +204,22 @@ nav{
   flex-grow: 10;
   justify-content: center;
   line-height: 2rem;
-  margin: 0 20%;
+  margin: 0;
+  padding: 0;
+}
+nav{
+    border-top: 1px #d7d7d7 solid;
+    padding: 0.5rem;
+    width: 95%;
 }
 .n-item{
   padding: 0 1rem;
   flex: 0 1 1rem;
   text-align: center;
 }
-aside img{
+header img{
   max-height: 3rem;
+  padding: 0.5rem;
 }
 /* Hero -------------------------------------------------------------*/
 h2, main p{
@@ -448,11 +435,9 @@ footer a{
   line-height: 2rem;
   text-decoration: underline;
 }
-
 footer span p {
   color: #969696;
 }
-
                          /*Social Media Bars*/
 .social{  /*Flexparent of 2 Flexboxes*/
   display:flex;
@@ -469,11 +454,9 @@ footer span p {
 
 
           /*Tablet600 Breakpoint ------------*/
-
-
 @media screen and (min-width:600px){  
                 /* Header: NavBar and Header Icons*/
-  aside{
+  header{
     border: none;
   }
   body{
@@ -484,7 +467,7 @@ footer span p {
     height: 5rem;
     justify-content: center;
   }
-  nav{
+  .nav{
     align-self: center;
     position: absolute;
     left: 8%;
@@ -562,14 +545,14 @@ footer{
    font-size:16px;
   }
   /*Logo and Cart -------------------------*/
-  aside img{
+  header img{
     max-height: 4rem;
   }
   header{
     height: 6rem;
   }
   /*Nav Bar--------------------------------*/
-  nav{
+  .nav{
     left:15%;
   }
   .n-item a{
