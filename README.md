@@ -7,7 +7,7 @@ RED Academy Portfolio Project 01
 This apparel sales website uses a responsive, mobile-first approach through scalable units, percentages, and CSS media queries to modify mobile styles along break-points and optimize use for tablets (600px) and desktops (1240px). 
 
 
-###Intentional Design, Efficient Process
+### Intentional Design, Efficient Process
 This was made possible through our use of Flexbox although neither Flexbox nor mobile-first were taught until significant progress on the project was made. This forced a redesign and significant refactoring of the mark-up and style used on this website. I learned how costly refactoring can be and how essential it is to draw out designs on paper and have them with me while I implement a design. The cost savings of these strategies were invaluable when I was using them.
 
 
