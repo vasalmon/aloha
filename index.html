@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="Victor Salmon" content="RED Academy School Work">
+    <title>Aloha Spring Summer 2016</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+<!--Hilarious To Do List:
+Add Break-points for Tablet (600) and Desktop (1240)
+Add heading text shadow
+Center Subscribe Button
+Display Textarea default text "Your Email"
+Center wave background image correctly and zoom
+Task: run HTML and CSS through W3C validators to “de-lint” them.-->
+
+  <body>
+    <div class="wrapper">
+      <header><!-- 2-Cell Flexbox Container/-->
+        <aside><!--Flex Up/Left-->
+          <img src="images/aloha-logo.svg" alt="Logo" class="logo">
+          <img src="images/cart-icon.svg" alt="Cart" class="cart">
+        </aside>
+        <nav><!--Flex Down/Right-->
+          <div class="n-item">
+            <a href="">About</a>
+          </div>
+          <div class="n-item">
+            <a href="">Shop</a>
+          </div>
+          <div class="n-item">
+            <a href="">Featured</a>
+          </div>
+          <div class="n-item">
+            <a href="">Updates</a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <p>New Collection</p>
+        <h1>Spring/Summer 2016</h1>
+      </section>
+
+      <main>
+        <h2><em>Hand-crafted </em><strong>Styles</strong></h2>
+        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below."</p>
+        <div class="category">
+          <div class="mens">Men's</div>
+        </div>
+        <div class="category half-size">
+          <div class="trends">Trends</div>
+          <div class="glasses">Glasses</div>
+        </div>
+        <div class="category half-size">
+          <div class="sale">Sale</div>
+          <div class="bags">Bags</div>
+        </div>
+        <div class="category">
+        <div class="womens">Women's</div>
+        </div>
+    
+      </main>
+
+      <section class="carousel">
+        <h2><em>Most-Loved </em><strong>Products</strong></h2>
+        <div>
+          <ul>
+            <li>
+              <picture>
+                <img src="images/blue-hipster-backpack.jpg">
+              </picture>
+              <h5>Bags</h5>
+              <h3>Blue Hipster Backpack</h3>
+              <h4>$69.00</h4>
+            </li>
+
+            <li>
+              <picture>
+                <img src="images/stretch-knit-dress.jpg">
+              </picture>
+              <h5>Dresses</h5>
+              <h3>Stretch Knit Dress</h3>
+              <h4>$169.00</h4>
+            </li>
+
+            <li> 
+              <picture>
+                <img src="images/cotton-blue-shirt.jpg">
+              </picture>
+              <h5>Shirts</h5>
+              <h3>Cotton Blue Shirt</h3>
+              <h4>$89.00</h4>
+            </li>
+            <li>
+              <picture>
+                <img src="images/checked-stretch-dress.jpg">
+              </picture>
+              <h5>Dresses</h5>
+              <h3>Checked Stress Dress</h3>
+              <h4>$129.00</h4>
+            </li>
+          </ul>
+          <picture>
+          <img class="carousel">
+          </picture>
+        </div>
+      </section>
+
+      <section class="email">
+        <h2><em>Sign-up for </em><strong>Updates</strong></h2>
+        <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+        <form action="" onsubmit="return someKindOfFormValidation"> <!-- action=""-->
+          <div class="txtWrap">
+            <input type="text" placeholder="Your Email">
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <p>© 2016 Aloha Apparel Co.</p>
+        <p>Powered by HTML and CSS.</p>
+        <br>
+        <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+        <br>
+        <p>1490 W Broadway</p>
+        <p>Vanouver, BC, Canada</p>
+        
+        <div>
+          <i class="fa fa-facebook"></i> 
+          <span>Facebook<br></span>
+          <i class="fa fa-twitter"></i> 
+          <span>Twitter<br></span>
+          <i class="fa fa-instagram"></i> 
+          <span>Instagram<br></span>
+          <i class="fa fa-pinterest"></i> 
+          <span>Pinterest<br></span>
+          <i class="fa fa-google-plus"></i> 
+          <span>Google+<br></span>
+        </div>
+
+      </footer>
+    </div>
+  </body>
+</html>
