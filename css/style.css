@@ -6,14 +6,14 @@ body {
     color: #2d2d2d;
 }
 
-.skipNav {
+.screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
   height: 1px;
   width: 1px;
   overflow: hidden;
 }
-.skipNav:focus {
+.screen-reader-text:focus {
   clip: auto !important;
   display: block;
   height: auto;
@@ -325,15 +325,21 @@ h5 {
 
 
 /*Your Email "Subscribe" Bar*/
-
+.email label {
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+  
+    z-index: -5;
+}
 .email input {
-    padding: .5rem 1rem;
-    color: black;
     border: none;
     border-radius: 2rem;
     box-shadow: none;
-    -ms-flex: 1 1 0;
-    flex: 1 1 0;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: .5rem 1rem; 
+    z-index: 5;
 }
 
 .email input:focus {

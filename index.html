@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <a class="skipNav" tabindex="9001" href="#shop">Skip to Main Content?</a>
+    <a class="screen-reader-text" tabindex="9001" href="#shop">Skip to Main Content?</a>
     <div class="wrapper">
       <header><!-- 3-Cell Flexbox/-->
         <img src="images/aloha-logo.svg" alt="Logo" class="logo">
@@ -58,7 +58,7 @@
           <div class="main-carousel">
             <div class = "carousel-cell">
               <picture>
-                <img src="images/stretch-knit-dress.jpg">
+                <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
               </picture>
               <h5>Dresses</h5>
               <h3>Stretch Knit Dress</h3>
@@ -66,7 +66,7 @@
             </div>
             <div class = "carousel-cell">
               <picture>
-                <img src="images/cotton-blue-shirt.jpg">
+                <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
               </picture>
               <h5>Shirts</h5>
               <h3>Cotton Blue Shirt</h3>
@@ -74,7 +74,7 @@
             </div>          
             <div class = "carousel-cell">
               <picture>
-                <img src="images/checked-stretch-dress.jpg">
+                <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
               </picture>
               <h5>Dresses</h5>
               <h3>Checked Stress Dress</h3>
@@ -82,7 +82,7 @@
             </div>
             <div class = "carousel-cell">
               <picture>
-                <img src="images/blue-hipster-backpack.jpg">
+                <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
               </picture>
               <h5>Bags</h5>
               <h3>Blue Hipster Backpack</h3>
@@ -91,7 +91,7 @@
 
             <div class = "carousel-cell">
               <picture>
-                <img src="images/denim-overall-shorts.jpg">
+                <img src="images/denim-overall-shorts.jpg" alt="Denim Overall Shorts">
               </picture>
               <h5>Denim</h5>
               <h3>Denim Overall Shorts</h3>
@@ -99,7 +99,7 @@
             </div>
             <div class = "carousel-cell">
               <picture>
-                <img src="images/pink-dotted-dress.jpg">
+                <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
               </picture>
               <h5>Dresses</h5>
               <h3>Pink Dotted Dress</h3>
@@ -107,7 +107,7 @@
             </div>
             <div class = "carousel-cell">
               <picture>
-                <img src="images/blue-silk-dress.jpg">
+                <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
               </picture>
               <h5>Dresses</h5>
               <h3>Blue Silk Dress</h3>
@@ -115,7 +115,7 @@
             </div>
             <div class = "carousel-cell">
               <picture>
-                <img src="images/cotton-yellow-tshirt.jpg">
+                <img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-shirt">
               </picture>
               <h5>Shirts</h5>
               <h3>Cotton Yellow T-shirt</h3>
@@ -128,12 +128,14 @@
       <section class="email" id="updates">
         <h2><em>Sign-up for </em><strong>Updates</strong></h2>
         <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-        <form action="#updates" onsubmit="return someKindOfFormValidation">
-          <div class="txtWrap">
-            <input type="text" placeholder="Your Email">
-            <button type="submit">Subscribe</button>
-          </div>
-        </form>
+          <form action="#updates" onsubmit="return someKindOfFormValidation">
+                <div class="txtWrap">
+                  <label class="screen-reader-text" for="yourEmail">Type Your E-mail Here!</label>
+                  <input id="yourEmail" type="email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="Type Your E-mail Here">
+                  <button type="submit">Subscribe</button>
+                </div>
+
+            </form>
       </section>
 
       <footer>
