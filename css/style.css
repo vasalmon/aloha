@@ -1,395 +1,352 @@
 /* Headings, and General Style ------------------------------*/
-body
-{
+
+body {
     font-family: 'Raleway Light';
     font-size: 14px;
-
     color: #2d2d2d;
 }
-.flickity-prev-next-button
-{
+
+.skipNav {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.skipNav:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 9001;    
+}
+
+.flickity-prev-next-button {
     display: none;
 }
-header
-{
+
+header {
     font-family: 'Raleway Medium';
 }
-a
-{
+
+a {
     text-decoration: none;
 }
-li
-{
+
+li {
     list-style-type: none;
 }
-h1,
-h2
-{
+
+h1, h2 {
     font-family: 'Playfair Display';
 }
-h2,
-header
-{
+
+h2, header {
     color: #2d2d2d;
 }
-em
-{
+
+em {
     font-family: 'Playfair Display Italic';
     font-weight: 400;
 }
-strong
-{
+
+strong {
     font-family: 'Playfair Display Bold';
 }
+
+
 /*Header --------------------------------------*/
-header
-{
+
+header {
     display: -ms-flexbox;
     display: flex;
-
     height: 6.5rem;
     margin: .5rem;
-
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
-header a
-{
+
+header a {
     font-size: .9rem;
-
     text-transform: uppercase;
-
     color: #e2574c;
 }
-a:hover
-{
+
+a:hover {
     color: #b64036;
 }
 
-.nav
-{
+.nav {
     line-height: 2rem;
-
     display: -ms-flexbox;
     display: flex;
-
     margin: 0;
     padding: 0;
     /*Nested Nav Flexbox*/
-
     -ms-flex-item-align: center;
     align-self: center;
     -ms-flex-line-pack: center;
     align-content: center;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -ms-flex-positive: 10;
     flex-grow: 10;
     -ms-flex-pack: center;
     justify-content: center;
 }
-nav
-{
+
+nav {
     width: 95%;
     padding: .5rem;
-
     border-top: 1px #d7d7d7 solid;
 }
-.n-item
-{
+
+.n-item {
     padding: 0 1rem;
-
     text-align: center;
-
     -ms-flex: 0 1 1rem;
-        flex: 0 1 1rem;
+    flex: 0 1 1rem;
 }
-header img
-{
+
+header img {
     max-height: 3rem;
     padding: .5rem;
 }
+
+
 /* Hero --------------------------------------*/
-h2,
-main p
-{
+
+h2, main p {
     text-align: center;
 }
-.hero
-{
+
+.hero {
     height: 16.5rem;
     padding-top: 8.5rem;
-
     text-align: center;
-
     color: white;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.25)),
-    url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
     background-repeat: no-repeat, no-repeat, repeat-x;
     background-position: center, center 2rem, center;
     background-size: auto, 10rem, auto 30rem;
 }
-.hero p
-{
+
+.hero p {
     font-size: 1.2rem;
     font-weight: 600;
-
     text-transform: uppercase;
-
     text-shadow: 1px 1px #242424;
 }
-h1
-{
+
+h1 {
     font-size: 2rem;
     font-weight: 400;
-
     padding: 0 4rem;
-
     text-shadow: 1px 1px #969696;
 }
+
+
 /* "Hand-Crafted Styles" Main----------------*/
-h2
-{
+
+h2 {
     font-size: 2.2rem;
     line-height: 2rem;
-
     padding-top: 1.7rem;
 }
 
-main p,
-.email p
-{
+main p, .email p {
     line-height: 2rem;
 }
-main p
-{
-    font-size: 1.1rem;
 
+main p {
+    font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 5rem;
-
     text-align: center;
-
     color: #242424;
 }
-.category
-{
+
+.category {
     display: -ms-flexbox;
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
     /*styling for flexbox categories */
-
     -ms-flex-line-pack: center;
     align-content: center;
     -ms-flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
 }
-.mens,
-.trends,
-.glasses,
-.sale,
-.bags,
-.womens
-{
+
+.mens, .trends, .glasses, .sale, .bags, .womens {
     font-family: 'Raleway Medium';
     font-size: 1.5rem;
-
     padding-top: 22%;
     padding-bottom: 22%;
-
     text-align: center;
     text-transform: uppercase;
-
     color: white;
     background-position: center, center;
     background-size: cover, cover;
 }
-.trends,
-.glasses,
-.sale,
-.bags
-{
+
+.trends, .glasses, .sale, .bags {
     max-width: 50%;
-
     -ms-flex: 1 0 48%;
-        flex: 1 0 48%;
+    flex: 1 0 48%;
 }
-.mens,
-.womens
-{
+
+.mens, .womens {
     max-width: 100%;
-
     -ms-flex: 2 0 100%;
-        flex: 2 0 100%;
+    flex: 2 0 100%;
 }
-.mens
-{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.25)),
-    url('../images/mens-category.jpg');
+
+.mens {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/mens-category.jpg');
 }
-.trends
-{
+
+.trends {
     margin: .5rem .5rem .5rem 0;
-
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.25)),
-    url('../images/trends-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/trends-category.jpg');
 }
-.glasses
-{
+
+.glasses {
     margin: .5rem 0;
-
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.25)),
-    url('../images/glasses-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/glasses-category.jpg');
 }
-.sale
-{
+
+.sale {
     margin: 0 .5rem .5rem 0;
-
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.25)),
-    url('../images/sale-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/sale-category.jpg');
 }
-.bags
-{
+
+.bags {
     margin-bottom: .5rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/bags-category.jpg');
+}
 
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.25)),
-    url('../images/bags-category.jpg');
+.womens {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/womens-category.jpg');
 }
-.womens
-{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.25)),
-    url('../images/womens-category.jpg');
-}
+
+
 /* Most-Loved Products Carousel Style--------*/
-.flickity-page-dots
-{
+
+.flickity-page-dots {
     margin-bottom: 1.5rem;
 }
-.main-carousel
-{
+
+.main-carousel {
     height: 33rem;
     padding-bottom: .5rem;
-
     text-align: center;
 }
-.carousel-cell
-{
+
+.carousel-cell {
     width: 100%;
     margin-bottom: 0;
     padding-top: 2rem;
 }
-h3
-{
+
+h3 {
     font-family: 'Playfair Display';
     font-size: 1.3rem;
     font-weight: 400;
-
     margin-top: .8rem;
     margin-bottom: 0;
     padding-bottom: 0;
-
     color: #e2574c;
 }
-h4,
-h5
-{
-    font-family: 'Raleway Light';
 
+h4, h5 {
+    font-family: 'Raleway Light';
     color: #969696;
 }
-h4
-{
+
+h4 {
     font-size: .9rem;
     line-height: .9rem;
-
     padding: 0;
 }
-h5
-{
-    font-size: .7rem;
 
+h5 {
+    font-size: .7rem;
     margin-top: .5rem;
     margin-bottom: 0;
-
     text-transform: uppercase;
 }
+
+
 /* Updates section (subscribe)---------------*/
-.email
-{
+
+.email {
     height: 19.5rem;
     margin-top: 2rem;
     padding-top: .2rem;
     padding-bottom: 1rem;
-
     text-align: center;
-
     color: white;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.2) 0%,rgba(0,0,0,.2) 100%), url('../images/wave-bkgd.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 100%), url('../images/wave-bkgd.jpg');
     background-position: bottom, bottom;
     background-size: cover, 90rem;
 }
-.email p
-{
+
+.email p {
     font-size: 1rem;
 }
-.email h2
-{
-    margin-top: 1rem;
 
+.email h2 {
+    margin-top: 1rem;
     color: white;
     text-shadow: 2px 2px #969696;
 }
-.txtWrap
-{
+
+.txtWrap {
     display: -ms-flexbox;
     display: flex;
-
     width: 80%;
     margin: 1.5rem auto;
     padding: .2rem .2rem .2rem .6rem;
-
     border-radius: 2rem;
     background-color: white;
-
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-/*Your Email "Subscribe" Bar*/
-.email input
-{
-    padding: .5rem 1rem;
 
+
+/*Your Email "Subscribe" Bar*/
+
+.email input {
+    padding: .5rem 1rem;
     color: black;
     border: none;
     border-radius: 2rem;
     box-shadow: none;
-
     -ms-flex: 1 1 0;
-        flex: 1 1 0;
+    flex: 1 1 0;
 }
-.email input:focus
-{
+
+.email input:focus {
     outline: none;
 }
-button
-{
-    float: right;
 
+button {
+    float: right;
     width: 25%;
     min-width: 110px;
     max-width: 110px;
     padding: .5rem 1rem;
-
     text-align: center;
-
     color: white;
     border: none;
     border-color: white;
@@ -398,297 +355,223 @@ button
     box-shadow: none;
     text-shadow: none;
 }
+
+
 /*Contact Info -----------------------------*/
-footer
-{
+
+footer {
     font-family: 'Playfair Display';
     font-size: .9rem;
     line-height: .5rem;
-
     height: 13rem;
     margin-top: .5rem;
     padding: 3rem;
-
     text-align: center;
-
     color: white;
     background-color: #242424;
     background-size: cover;
 }
-footer a
-{
+
+footer a {
     line-height: 2rem;
-
     text-decoration: underline;
-
     color: white;
 }
-footer span p
-{
+
+footer span p {
     color: #969696;
 }
+
+
 /*Social Media Bars--------------------------*/
-.social
-{
+
+.social {
     font-size: .8rem;
     /*Flexparent of 2 Flexboxes*/
-
     display: -ms-flexbox;
     display: flex;
-
     width: 10rem;
     margin: 3rem auto 0 auto;
-
     -ms-flex-flow: column, nowrap;
-        flex-flow: column, nowrap;
+    flex-flow: column, nowrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -ms-flex: 0 1 0;
-        flex: 0 1 0;
+    flex: 0 1 0;
 }
-.social span
-{
+
+.social span {
     /*Flexbox of social media names */
     display: none;
 }
 
 
 /*Tablet600 Breakpoint*/
-@media screen and (min-width:600px)
-{
+
+@media screen and (min-width:600px) {
     /* Header: NavBar and Header Icons*/
-    nav
-    {
+    nav {
         border: none;
     }
-    body
-    {
+    body {
         font-size: 16px;
     }
-    header
-    {
+    header {
         height: 4rem;
-
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-    .hero
-    {
+    .hero {
         background-size: 10rem cover;
     }
-    nav
-    {
+    nav {
         width: 40%;
-
         -ms-flex-order: 2;
         order: 2;
     }
-    .cart
-    {
+    .cart {
         -ms-flex-order: 3;
         order: 3;
     }
-    h1
-    {
+    h1 {
         font-size: 3rem;
-
         margin-top: 1.2rem;
-
         text-shadow: 2px 2px 2px grey;
     }
     /*Category Tiles-------------------------*/
-    .trends,
-    .glasses,
-    .sale,
-    .bags,
-    .mens,
-    .womens
-    {
+    .trends, .glasses, .sale, .bags, .mens, .womens {
         margin: 0;
         padding-top: 11%;
         padding-bottom: 11%;
-
         border: .25rem;
         border-style: solid;
         border-color: white;
     }
-    .trends,
-    .glasses,
-    .sale,
-    .bags
-    {
+    .trends, .glasses, .sale, .bags {
         max-width: 24%;
-
         -ms-flex: 1 0 24%;
-            flex: 1 0 24%;
+        flex: 1 0 24%;
     }
-    .mens,
-    .womens
-    {
+    .mens, .womens {
         max-width: 48.6%;
-
         -ms-flex: 2 0 48.6%;
-            flex: 2 0 48.6%;
+        flex: 2 0 48.6%;
     }
-    .mens,
-    .sale
-    {
+    .mens, .sale {
         border-left: 0;
     }
-    .womens,
-    .glasses
-    {
+    .womens, .glasses {
         border-right: 0;
     }
     /*Flickity Carousel--------------------*/
-    .carousel-main
-    {
+    .carousel-main {
         margin: 0 auto;
     }
-    .carousel-cell
-    {
+    .carousel-cell {
         width: 50%;
     }
-
-
     /*Email Updates -----------------------*/
-    .email
-    {
+    .email {
         height: 22.5rem;
     }
-    .email p
-    {
+    .email p {
         font-size: 1.2rem;
-
         max-width: 660px;
         margin: 0 auto;
     }
-    form
-    {
+    form {
         max-width: 500px;
         margin: 0 auto;
     }
-    form button
-    {
+    form button {
         margin: .05rem;
     }
-
     /*Social Media Bar----------------------*/
-    footer
-    {
+    footer {
         display: -ms-flexbox;
         display: flex;
-
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-    .aboutTxt
-    {
+    .aboutTxt {
         font-size: 1rem;
-
         padding-top: .5rem;
-
         text-align: left;
     }
-    .social
-    {
+    .social {
         font-family: 'Raleway Light';
         font-size: 1.0rem;
-
         display: -ms-flexbox;
         display: flex;
-            flex-direction: column;
-
+        flex-direction: column;
         width: 10rem;
         height: 10rem;
         margin: 0;
         padding: 1rem 0 0 0;
-
         text-align: left;
-
         -ms-flex-direction: column;
         -ms-flex-pack: distribute;
         justify-content: space-around;
     }
-    .social i
-    {
+    .social i {
         width: 2rem;
         height: 1.5rem;
-
         -ms-flex: 0;
-            flex: 0;
+        flex: 0;
     }
-    .social a
-    {
+    .social a {
         width: 10rem;
-
         text-decoration: none;
     }
-    .social span
-    {
+    .social span {
         display: inline;
-
         text-align: left;
     }
 }
 
 
-
 /*Desktop1240 Breakpoint*/
-@media screen and (min-width: 1240px)
-{
-    .wrapper
-    {
+
+@media screen and (min-width: 1240px) {
+    .wrapper {
         font-size: 16px;
     }
     /*Logo and Cart -------------------------*/
-    header img
-    {
+    header img {
         max-height: 4rem;
     }
-    header
-    {
+    header {
         height: 6rem;
     }
     /*Nav Bar--------------------------------*/
-    .nav
-    {
+    .nav {
         left: 15%;
     }
-    .n-item a
-    {
+    .n-item a {
         font-size: 1rem;
     }
     /*Hero-----------------------------------*/
-    .hero
-    {
+    .hero {
         height: 22rem;
         padding-top: 13rem;
-
         background-position: center, center 4rem, center;
         background-size: auto, 15.5rem, auto 100%;
     }
-    h1
-    {
+    h1 {
         font-size: 4rem;
-
         margin: 0;
         padding: 0;
     }
-
     /*Flickity Carousel-----------------------*/
-    .carousel-main
-    {
+    .carousel-main {
         max-width: 1240px;
         margin: 0 auto;
     }
-    .carousel-cell
-    {
+    .carousel-cell {
         width: 25%;
     }
     /*Updates*/
-    .email
-    {
+    .email {
         background-size: cover;
     }
 }
