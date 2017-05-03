@@ -258,7 +258,7 @@ main p {
     padding-top: 2rem;
 }
 
-h3 {
+h4 { /*was h3*/
     font-family: 'Playfair Display';
     font-size: 1.3rem;
     font-weight: 400;
@@ -268,18 +268,18 @@ h3 {
     color: #e2574c;
 }
 
-h4, h5 {
+h5, h3 {
     font-family: 'Raleway Light';
     color: #969696;
 }
 
-h4 {
+h5 { /*was h4 */
     font-size: .9rem;
     line-height: .9rem;
     padding: 0;
 }
 
-h5 {
+h3 { /*was h5*/
     font-size: .7rem;
     margin-top: .5rem;
     margin-bottom: 0;
