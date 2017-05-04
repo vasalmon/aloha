@@ -131,7 +131,7 @@ h2, main p {
     padding-top: 8.5rem;
     text-align: center;
     color: white;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/banner-girl.png'), url('../images/flower-bkgd-min.jpg');
     background-repeat: no-repeat, no-repeat, repeat-x;
     background-position: center, center 2rem, center;
     background-size: auto, 10rem, auto 30rem;
@@ -212,31 +212,31 @@ main p {
 }
 
 .mens {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/mens-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/mens-category-min.jpg');
 }
 
 .trends {
     margin: .5rem .5rem .5rem 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/trends-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/trends-category-min.jpg');
 }
 
 .glasses {
     margin: .5rem 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/glasses-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/glasses-category-min.jpg');
 }
 
 .sale {
     margin: 0 .5rem .5rem 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/sale-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/sale-category-min.jpg');
 }
 
 .bags {
     margin-bottom: .5rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/bags-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/bags-category-min.jpg');
 }
 
 .womens {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/womens-category.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25)), url('../images/womens-category-min.jpg');
 }
 
 
@@ -296,7 +296,7 @@ h3 { /*was h5*/
     padding-bottom: 1rem;
     text-align: center;
     color: white;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 100%), url('../images/wave-bkgd.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 100%), url('../images/wave-bkgd-min.jpg');
     background-position: bottom, bottom;
     background-size: cover, 90rem;
 }
