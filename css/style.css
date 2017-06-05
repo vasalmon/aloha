@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  font-family: 'Raleway Light';
+  font-family: 'ralewaylight';
   font-weight: bold;
 }
 
@@ -42,7 +42,7 @@ li {
 }
 
 h1, h2 {
-  font-family: 'Playfair Display';
+  font-family: 'playfairdisplay';
 }
 
 h2, header {
@@ -50,12 +50,14 @@ h2, header {
 }
 
 em {
-  font-family: 'Playfair Display Italic';
+  font-family: 'playfairdisplay';
+  font-style: italic;
   font-weight: 400;
 }
 
 strong {
-  font-family: 'Playfair Display Bold';
+  font-family: 'playfairdisplay';
+  font-weight: 700;
 }
 
 
@@ -190,7 +192,7 @@ main p {
 }
 
 .mens, .trends, .glasses, .sale, .bags, .womens {
-  font-family: 'Raleway Light';
+  font-family: 'ralewaylight';
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 22%;
@@ -263,7 +265,7 @@ main p {
 
 h4 {
   /*was h3*/
-  font-family: 'Playfair Display';
+  font-family: 'playfairdisplay';
   font-size: 1.3rem;
   font-weight: 400;
   margin-top: .8rem;
@@ -273,7 +275,7 @@ h4 {
 }
 
 h5, h3 {
-  font-family: 'Raleway Light';
+  font-family: 'ralewaylight';
   color: #969696;
 }
 
@@ -373,12 +375,12 @@ button {
 /*Contact Info -----------------------------*/
 
 footer {
-  font-family: 'Playfair Display';
+  font-family: 'playfairdisplay';
   font-size: .9rem;
   line-height: .5rem;
   height: 13rem;
   margin-top: .5rem;
-  padding: 3rem;
+  padding: 2.5rem;
   text-align: center;
   color: white;
   background-color: #242424;
@@ -512,7 +514,7 @@ footer span p {
     text-align: left;
   }
   .social {
-    font-family: 'Raleway Light';
+    font-family: 'ralewaylight';
     font-size: 1.0rem;
     display: -ms-flexbox;
     display: flex;
