@@ -131,7 +131,7 @@ h2, .about p {
 }
 
 .hero {
-  height: 16.5rem;
+  height: 14rem;
   padding-top: 8.5rem;
   text-align: center;
   color: white;
@@ -159,7 +159,7 @@ h1 {
 /* "Hand-Crafted Styles" Main----------------*/
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 2rem;
   padding-top: 1.7rem;
 }
@@ -173,7 +173,7 @@ h2 {
   font-size: 0.9rem;
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-align: center;
   color: #242424;
 }
@@ -253,7 +253,7 @@ h2 {
 }
 
 .main-carousel {
-  height: 33rem;
+  height: 32rem;
   padding-bottom: .5rem;
   text-align: center;
 }
@@ -299,7 +299,7 @@ h3 {
 /* Updates section (subscribe)---------------*/
 
 .email {
-  height: 19.5rem;
+  height: 17.5rem;
   margin-top: 2rem;
   padding-top: .2rem;
   padding-bottom: 1rem;
@@ -311,11 +311,19 @@ h3 {
 }
 
 .email p {
-  font-size: 1rem;
+  font-family: 'ralewaylight';
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.email input {
+  font-family: 'ralewaylight';
+  font-size: 0.8rem;
 }
 
 .email h2 {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   color: white;
   text-shadow: 2px 2px #969696;
 }
@@ -379,7 +387,7 @@ footer {
   font-family: 'playfairdisplay';
   font-size: .9rem;
   line-height: .5rem;
-  height: 13rem;
+  height: 12rem;
   margin-top: .5rem;
   padding: 2.5rem;
   text-align: center;
@@ -454,6 +462,10 @@ footer span p {
     margin-top: 1.2rem;
     text-shadow: 2px 2px 2px grey;
   }
+
+  .about p{
+    font-size: 1rem;
+  }
   /*Category Tiles-------------------------*/
   .trends, .glasses, .sale, .bags, .mens, .womens {
     margin: 0.5%;
@@ -484,8 +496,11 @@ footer span p {
     width: 50%;
   }
   /*Email Updates -----------------------*/
+  .txtWrap{
+    align-items: center;
+  }
   .email {
-    height: 22.5rem;
+    height: 18.5rem;
   }
   .email p {
     font-size: 1.2rem;
@@ -533,8 +548,9 @@ footer span p {
     flex: 0;
   }
   .social a {
-    width: 10rem;
+    font-size: 0.9rem;
     text-decoration: none;
+    width: 10rem;
   }
   .social span {
     display: inline;
