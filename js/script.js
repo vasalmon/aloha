@@ -1,5 +1,6 @@
 $(function () {
-  //Initialized Flickity
+
+  //Initialize Flickity
   $('.main-carousel').flickity({
     // options
     autoPlay: true,
@@ -9,6 +10,7 @@ $(function () {
     pauseAutoPlayOnHover: false,
     prevNextButtons: false
   });
+
   //Smooth Scrolling
   $('nav a[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -22,6 +24,7 @@ $(function () {
       }
     }
   });
+  
   //Subscribe to Mailing List
   $('form button').on('click', function (event) {
     event.preventDefault();
